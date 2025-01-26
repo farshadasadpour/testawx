@@ -1,0 +1,15 @@
+apiVersion: cache.f4rsh4d/v1alpha1
+kind: Farshadawx
+metadata:
+  labels:
+    app.kubernetes.io/name: awxoperator
+    app.kubernetes.io/managed-by: kustomize
+  name: farshadawx-sample
+spec:
+  host_name: test_new_1
+  inventory_name: testawx
+  controller_host: http://91.107.184.95:32000
+  controller_username: admin
+  controller_password: kq1Mw6lmPENsjW904EVzPedUY8tk0ZQJ
+
+

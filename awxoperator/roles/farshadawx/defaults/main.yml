@@ -1,0 +1,7 @@
+---
+# defaults file for Farshadawx
+host_name: test
+inventory_name: testawx
+controller_host: http://91.107.184.95:32000
+controller_username: admin
+controller_password: kq1Mw6lmPENsjW904EVzPedUY8tk0ZQJ 
