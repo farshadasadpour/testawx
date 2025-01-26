@@ -17,4 +17,11 @@ resources:
   group: cache
   kind: Farshadawx
   version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: f4rsh4d
+  group: cache
+  kind: Projectawx
+  version: v1alpha1
 version: "3"

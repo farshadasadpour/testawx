@@ -1,0 +1,5 @@
+---
+# tasks file for Projectawx
+- name: Add a Project to AWX inventory
+  include_tasks:
+    file: project.yml

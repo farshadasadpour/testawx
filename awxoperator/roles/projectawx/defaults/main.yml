@@ -1,12 +1,9 @@
 ---
-# defaults file for Farshadawx
-host_name: test
-inventory_name: testawx
 controller_host: http://91.107.184.95:32000
 controller_username: admin
 controller_password: kq1Mw6lmPENsjW904EVzPedUY8tk0ZQJ
 #
-project_name: test_project
-project_description: testproject
+project_name: test_project_crd
+project_description: test_project_crd
 organization: Default
 git_repo_url: https://github.com/farshadasadpour/testinstance.git

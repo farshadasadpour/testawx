@@ -5,4 +5,4 @@ kind: Kustomization
 images:
 - name: controller
   newName: f4rsh4d/awxoperator
-  newTag: 0.0.2
+  newTag: 0.0.5

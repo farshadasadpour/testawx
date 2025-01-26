@@ -1,0 +1,17 @@
+- name: Add a project with Git SCM
+  awx.awx.project:
+    name: "{{ project_name }}"  
+    description: "{{ project_description | default('Project created via playbook') }}"
+    organization: "{{ organization_name | default('Default') }}"
+    scm_type: git
+    scm_url: "{{ git_repo_url }}"  # The URL of your Git repository
+    scm_branch: "{{ git_branch | default('main') }}"  # The branch to use in your Git repo
+    scm_clean: true  # Ensures any local modifications are removed before updates
+    scm_update_on_launch: true  # Perform an update before launching a job with this project
+    scm_track_submodules: true  # If your Git repo uses submodules
+    state: present
+    controller_host: "{{ controller_host }}"  
+    controller_username: "{{ controller_username }}"  
+    controller_password: "{{ controller_password }}"  
+    validate_certs: "{{ controller_verify_ssl | default(false) }}"  
+

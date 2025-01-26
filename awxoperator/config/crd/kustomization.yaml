@@ -3,4 +3,5 @@
 # It should be run by config/default
 resources:
 - bases/cache.f4rsh4d_farshadawxes.yaml
+- bases/cache.f4rsh4d_projectawxes.yaml
 # +kubebuilder:scaffold:crdkustomizeresource

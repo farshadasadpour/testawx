@@ -1,0 +1,23 @@
+# permissions for end users to view projectawxes.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: awxoperator
+    app.kubernetes.io/managed-by: kustomize
+  name: projectawx-viewer-role
+rules:
+- apiGroups:
+  - cache.f4rsh4d
+  resources:
+  - projectawxes
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - cache.f4rsh4d
+  resources:
+  - projectawxes/status
+  verbs:
+  - get

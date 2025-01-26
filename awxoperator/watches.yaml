@@ -4,4 +4,8 @@
   group: cache.f4rsh4d
   kind: Farshadawx
   role: farshadawx
+- version: v1alpha1
+  group: cache.f4rsh4d
+  kind: Projectawx
+  role: projectawx
 # +kubebuilder:scaffold:watch

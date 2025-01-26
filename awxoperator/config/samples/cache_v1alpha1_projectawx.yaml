@@ -1,0 +1,15 @@
+apiVersion: cache.f4rsh4d/v1alpha1
+kind: Projectawx
+metadata:
+  labels:
+    app.kubernetes.io/name: awxoperator
+    app.kubernetes.io/managed-by: kustomize
+  name: projectawx-sample
+spec:
+  project_name: test_project_crd
+  project_description: test_project_crd
+  controller_host: http://91.107.184.95:32000
+  controller_username: admin
+  controller_password: kq1Mw6lmPENsjW904EVzPedUY8tk0ZQJ
+  organization: Default
+  git_repo_url: https://github.com/farshadasadpour/testinstance.git
